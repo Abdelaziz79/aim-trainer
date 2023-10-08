@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aim Bot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 style="text-align: center;">AIM TRAINER</h1>
+
+    <div class="controller">
+
+        <label for="range" id="label_range1">appearance time </label><br>
+        <input type="range" max="5000" min="100" value="1000" id="range"
+            oninput="document.getElementById('label_range1').innerHTML = this.value"><br>
+
+
+        <label for=" range2" id="label_range2">disappearance time </label><br>
+        <input type="range" max="5000" min="100" value="1000" id="range2"
+            oninput="document.getElementById('label_range2').innerHTML = this.value"><br>
+
+        <label for="range3" id="label_range3">size </label><br>
+        <input type="range" max="100" min="10" value="30" id="range3"
+            oninput="document.getElementById('label_range3').innerHTML = this.value"><br>
+
+
+        <input type="button" value="Reset" id="reset" onclick="reset()">
+
+        <button id="start" onclick="start(document.getElementById('range').value)">START</button>
+        <button id="stop" onclick="alert1(),stop()">STOP</button>
+    </div>
+
+    <h1 id="score1">SCORE: 0</h1>
+    <script src="script.js"></script>
+</body>
+
+</html>
